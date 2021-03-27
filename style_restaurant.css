@@ -1,0 +1,297 @@
+/* Eléments principaux de la page */
+html
+{
+    font-size: 16px;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    }
+
+body
+{
+    font-family: Roboto,sans-serif;
+    color: #181818;
+    background-color: rgb(245, 243, 243) ;
+}
+
+a
+{
+    text-decoration: none;
+    color: #181818;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#bloc_page
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(245, 243, 243) ;
+}
+
+section h1, footer h1
+{
+    font-family: 'Shrikland', Arial, Helvetica, sans-serif;
+    font-weight: Shrikland;
+}
+
+h2
+{
+    font-family: 'Shrikland', Arial, Helvetica, sans-serif;
+    font-weight: 12px;
+}
+
+p
+{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 12px; 
+}
+
+.bloc_header, .header
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/* Header */
+
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_full
+{
+    border-bottom: 2px solid rgb(190, 189, 189);
+    box-shadow:#181818;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.header_full a
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-left: 15px;
+    size: 45px;
+}
+.header_logo
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Main */
+
+.picture_restaurant
+{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.title_restaurant
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(245, 243, 243) ;
+    font-style: italic ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    bottom: 40px
+    
+}
+
+.name_restaurant
+{
+    padding-left: 10px;
+}
+
+.heart_restaurant
+{
+    color: #181818;
+    padding-right: 25px;
+    height: 15px;
+    width: 15px;
+}
+.menu
+{
+    background-color: rgb(245, 243, 243) ;
+}
+
+.starter_name
+{
+    padding-left: 15px;
+}
+
+.line
+{
+    padding-top: 5px;   
+    border-bottom: 2px solid #99E2D0;
+    width: 40px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.starter_one, .starter_two, .starter_three
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    line-height: 25px;
+    height: 70px;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
+}
+
+
+.about_dish
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_dish_name
+{
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.main_dish_one, .main_dish_two, .main_dish_three
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    line-height: 25px;
+    height: 70px;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
+}
+
+.dessert_name
+{
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.dessert_one, .dessert_two, .dessert_three
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    line-height: 25px;
+    height: 70px;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
+}
+
+.description_dish
+{
+    color: gray;
+}
+
+.order
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.order_restaurant
+{
+    color: white;    
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    height: 50px;
+    width: 200px;
+    font-size: larger;
+    font-family: Roboto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(218, 214, 214);
+}
+/* Footer */
+footer 
+{
+    background-color: rgb(56, 56, 56);
+    color:  #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+}
+
+.footer_logo
+{
+    color: white;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: Shrikhand,"cursive";
+
+}
+
+footer img
+{
+    color: white;
+}
+
+.footer_text
+{
+    color: white; 
+    margin-left: 20px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+footer a 
+{
+    color: white;
+}
+
+footer i,
+{
+    color: white;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.footer_restaurant
+{
+    margin: 5px;
+}
