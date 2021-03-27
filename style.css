@@ -485,11 +485,13 @@ footer i,
     flex-direction: row;
 }
 
-@media screen and (max-width: 1204px) {
+/* sur les écrans, quand la largeur de la fênetre fait au maximum 1440px */
+@media screen and (max-width: 1440px) {
     #bloc_page {
-        width: 95%;
+        width: 70%;
         height: auto;
         margin: auto;
+        background-color: #9356DC;
     }  
 
     footer {
@@ -497,5 +499,6 @@ footer i,
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-color: #FF79DA;
     }
 }    
