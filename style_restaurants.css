@@ -88,13 +88,13 @@ p
 }
 .header_logo
 {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Shrikhand,"cursive";
+    font-size: xx-large;
+    
+ }
 
 /* Main */
 
@@ -124,15 +124,35 @@ p
 .name_restaurant
 {
     padding-left: 10px;
+    font-family: Shrikhand,"cursive";
 }
 
-.heart_restaurant
+.heart
 {
-    color: #181818;
+    color: black;
     padding-right: 25px;
-    height: 15px;
-    width: 15px;
+    padding-top: 10px;
+    font-size: 24px;
 }
+
+.full_heart
+{
+    display: none;
+   
+}
+
+.heart:hover .border_heart
+{
+    display: none;
+}
+
+.heart:hover .full_heart 
+{
+    display: block;
+    color: #9356DC;
+    
+} 
+
 .menu
 {
     background-color: rgb(245, 243, 243) ;
@@ -243,6 +263,7 @@ p
     font-family: Roboto;
     border-radius: 30px;
     box-shadow: 3px 3px 3px rgb(218, 214, 214);
+    border: 0px;
 }
 /* Footer */
 footer 
@@ -261,12 +282,8 @@ footer
     margin-left: 20px;
     margin-top: 25px;
     font-family: Shrikhand,"cursive";
+    font-size: larger;
 
-}
-
-footer img
-{
-    color: white;
 }
 
 .footer_text
@@ -279,6 +296,23 @@ footer img
     
 }
 
+.footer_restaurant
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon_footer1
+{
+    padding-right: 10px;
+}
+
+.icon_footer2
+{
+    padding-right: 8px;
+    /*line-height: 0px;*/
+}
+
 footer a 
 {
     color: white;
@@ -288,10 +322,10 @@ footer i,
 {
     color: white;
     font-size: 1rem;
-    margin-right: 10px;
 }
 
-.footer_restaurant
+.footer_partners
 {
-    margin: 5px;
+    display: flex;
+    flex-direction: row;
 }
