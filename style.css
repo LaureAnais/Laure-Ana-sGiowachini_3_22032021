@@ -505,6 +505,7 @@ footer i,
     .footer_text {
         display: flex;
         flex-direction: row;
+        background-color: red;
     }
 
 }    
