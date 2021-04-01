@@ -329,3 +329,190 @@ footer i,
     display: flex;
     flex-direction: row;
 }
+
+
+/* sur les écrans, quand la largeur dépasse celle d'un iphone */
+@media screen and (min-width: 576px) {
+   
+    .header_logo {
+        margin-left: 300px;
+    }
+
+    .picture_restaurant {
+        width: 750px;
+        height: 500px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    .starter_one, .starter_two, .starter_three {
+        width: 95%;
+    }
+    .main_dish_one, .main_dish_two, .main_dish_three
+    {
+        width: 95%;
+    }
+    .dessert_one, .dessert_two, .dessert_three
+    {
+        width: 95%;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 25px;
+    }
+
+    .footer_logo {
+        margin-top: 8px;
+        margin-left: 30px;
+    }
+
+    .footer_text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+   /*   
+    .footer_restaurant {
+        padding-right: 10px;
+    }
+
+    .footer_partners {
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+
+    .footer_legalnotice {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer_contact {
+        padding-left: 10px;
+        
+    }
+
+*/
+}    
+
+/* sur les écrans, quand la largeur dépasse celle d'une tablette */
+@media screen and (min-width: 780px) {
+    #bloc_page {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        
+    }  
+
+    .border_header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_full {
+        padding-left: 50px;
+        padding-right: 20px;
+        box-shadow: none;
+    }
+
+    .title_restaurant {
+        justify-content: left;
+        margin-left: 50px;
+        padding-bottom: 10px;
+        bottom: 5px;
+        font-size: x-large;
+    }
+
+    .name_restaurant {
+        margin-right: 55px;
+    }
+    .heart {
+        padding-top: 20px;
+    }
+
+    .picture_restaurant {
+        width: 700px;
+        height: 500px;
+        padding-left: 300px;
+    }
+
+    .menu_order {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .starter_one, .starter_two, .starter_three, .starter_fourth {
+        width: 300px;
+        height: 100px;
+    }
+
+    .main_dish_one, .main_dish_two, .main_dish_three {
+        width: 300px;
+        height: 100px;
+    }
+
+    .dessert_one, .dessert_two, .dessert_three {
+        width: 300px;
+        height: 100px;
+    }
+
+    .starter_name, .main_dish_name, .dessert_name {
+        padding-left: 55px;
+        margin-top: 35px;
+    
+    }  
+    
+    .line {
+        margin-left: 55px;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 25px;
+       
+    }
+
+    .footer_logo {
+        margin-top: 8px;
+      
+    }
+
+    .footer_text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    /*  
+    .footer_restaurant {
+        padding-left: 50px;
+        padding-right: 40px;
+    }
+
+    .footer_partners {
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+
+    .footer_legalnotice {
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+
+    .footer_contact {
+        padding-left: 20px;
+        
+    }
+*/
+
+}    
