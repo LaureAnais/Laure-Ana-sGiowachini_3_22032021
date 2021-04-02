@@ -408,6 +408,9 @@ footer i,
         margin: auto;
         
     }  
+    .back_homepage {
+        margin-left: 200px;
+    }
 
     .border_header {
         display: flex;
@@ -419,6 +422,7 @@ footer i,
         padding-right: 20px;
         box-shadow: none;
     }
+
 
     .title_restaurant {
         justify-content: left;
@@ -478,6 +482,7 @@ footer i,
         flex-direction: row;
         align-items: center;
         margin-right: 25px;
+        padding-left: 65px;
        
     }
 
@@ -490,6 +495,7 @@ footer i,
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        width: 800px;
 
     }
 
