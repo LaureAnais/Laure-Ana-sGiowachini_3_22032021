@@ -339,13 +339,16 @@ footer i,
     }
 
     .picture_restaurant {
-        width: 750px;
-        height: 500px;
+        width: 100%;
+        height: auto;
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
     }
-
+    .picture_restaurant img {
+        width: 100%;
+        height: auto;
+    }
     .starter_one, .starter_two, .starter_three {
         width: 95%;
     }
@@ -377,27 +380,6 @@ footer i,
         justify-content: space-around;
     }
 
-   /*   
-    .footer_restaurant {
-        padding-right: 10px;
-    }
-
-    .footer_partners {
-        padding-left: 5px;
-        padding-right: 10px;
-    }
-
-    .footer_legalnotice {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .footer_contact {
-        padding-left: 10px;
-        
-    }
-
-*/
 }    
 
 /* sur les écrans, quand la largeur dépasse celle d'une tablette */
@@ -409,7 +391,7 @@ footer i,
         
     }  
     .back_homepage {
-        margin-left: 200px;
+        margin-left: 130px;
     }
 
     .border_header {
@@ -418,18 +400,22 @@ footer i,
     }
 
     .header_full {
-        padding-left: 50px;
+        padding-left: 0px;
         padding-right: 20px;
         box-shadow: none;
     }
 
+    .header_logo {
+        margin-left: 200px;
+    }
 
     .title_restaurant {
         justify-content: left;
-        margin-left: 50px;
+        margin-left: 0px;
         padding-bottom: 10px;
         bottom: 5px;
         font-size: x-large;
+        bottom: 40px;
     }
 
     .name_restaurant {
@@ -440,9 +426,9 @@ footer i,
     }
 
     .picture_restaurant {
-        width: 700px;
-        height: 500px;
-        padding-left: 300px;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
     }
 
     .menu_order {
@@ -482,7 +468,7 @@ footer i,
         flex-direction: row;
         align-items: center;
         margin-right: 25px;
-        padding-left: 65px;
+        padding-left: 0px;
        
     }
 
@@ -498,27 +484,5 @@ footer i,
         width: 800px;
 
     }
-
-    /*  
-    .footer_restaurant {
-        padding-left: 50px;
-        padding-right: 40px;
-    }
-
-    .footer_partners {
-        padding-left: 10px;
-        padding-right: 40px;
-    }
-
-    .footer_legalnotice {
-        padding-left: 10px;
-        padding-right: 40px;
-    }
-
-    .footer_contact {
-        padding-left: 20px;
-        
-    }
-*/
 
 }    

@@ -76,7 +76,7 @@ p
 
 .header_logo
 {
-    margin-left: 70px;
+    margin-left: 100px;
     margin-top: 15px;
     margin-bottom: 10px;
     font-family: Shrikhand,"cursive";
@@ -417,8 +417,11 @@ article
 .heart:hover .full_heart 
 {
     display: block;
-    color: #9356DC;
-    
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition-duration: 25s;
+    color: red;
+    background-color: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
 }
 
 /* Footer */
@@ -545,29 +548,9 @@ footer i,
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        width: 600px;
     }
 
-   /*   
-    .footer_restaurant {
-        padding-right: 10px;
-    }
-
-    .footer_partners {
-        padding-left: 5px;
-        padding-right: 10px;
-    }
-
-    .footer_legalnotice {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .footer_contact {
-        padding-left: 10px;
-        
-    }
-
-*/
 }    
 
 /* sur les écrans, quand la largeur dépasse celle d'une tablette */
@@ -581,6 +564,10 @@ footer i,
     .border_header {
         display: flex;
         flex-direction: row;
+    }
+
+    .header_logo {
+        margin-left: 170px;
     }
 
     .header_full {
@@ -610,9 +597,14 @@ footer i,
         width: auto;
     }
 
+    .howitwork {
+        margin-left: 0px;
+    }
+
     .howitwork_menu {
         flex-direction: row;
         justify-content: space-around;
+        margin-left: 0px;
     }
 
     .howitwork_title {
@@ -656,19 +648,23 @@ footer i,
     }
     
     .first_restaurant {
-        width: 300px;
+        width: 320px;
+        margin-left: 30px;
     }
 
     .second_restaurant {
-        width: 300px;
+        width: 320px;
+        margin-right: 30px;
     }
     
     .third_restaurant {
-        width: 300px;
+        width: 320px;
+        margin-left: 30px;
     }
 
     .fourth_restaurant {
-        width: 300px;
+        width: 320px;
+        margin-right: 30px;
     }
 
     footer {
@@ -677,7 +673,7 @@ footer i,
         flex-direction: row;
         align-items: center;
         margin-right: 25px;
-        padding-left: 65px;
+        padding-left: 0px;
        
     }
 
@@ -693,27 +689,5 @@ footer i,
         width: 800px;
 
     }
-
-    /*  
-    .footer_restaurant {
-        padding-left: 50px;
-        padding-right: 40px;
-    }
-
-    .footer_partners {
-        padding-left: 10px;
-        padding-right: 40px;
-    }
-
-    .footer_legalnotice {
-        padding-left: 10px;
-        padding-right: 40px;
-    }
-
-    .footer_contact {
-        padding-left: 20px;
-        
-    }
-*/
 
 }    
