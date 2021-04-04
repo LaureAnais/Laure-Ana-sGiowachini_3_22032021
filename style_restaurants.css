@@ -175,8 +175,9 @@ p
 .starter_one, .starter_two, .starter_three
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
     background-color: white;
     line-height: 25px;
     height: 70px;
@@ -189,12 +190,38 @@ p
     box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
 }
 
+.green_icon {
+    background-color: #99E2D0;
+    display: flex;
+    width: 100px;
+    height: 100%;
+    transition-duration: 5s;
+}
+
+
+.green_box {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+i {
+    color: white;
+    align-items: center;
+}
+
+.dish {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;    
+}
 
 .about_dish
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 330px;
 }
 
 .main_dish_name
@@ -462,6 +489,8 @@ footer i,
     .line {
         margin-left: 55px;
     }
+
+    
     footer {
         width: 100%;
         display: flex;

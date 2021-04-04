@@ -401,6 +401,8 @@ article
     padding-right: 15px;
     padding-top: 15px;
     font-size: 24px;
+    background-clip: text;
+    cursor: pointer;
 }
 
 .full_heart
@@ -419,10 +421,16 @@ article
     display: block;
     background-clip: text;
     -webkit-background-clip: text;
-    transition-duration: 25s;
-    color: red;
-    background-color: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    color: transparent;
+    background-image: linear-gradient(#FF79DA 10%, #9356DC 95%);
+    transition: transform 25s;
 }
+
+/*
+.heart:hover ::before .full_heart {
+    transition: all 5s linear 0s;
+} 
+*/
 
 /* Footer */
 footer 
