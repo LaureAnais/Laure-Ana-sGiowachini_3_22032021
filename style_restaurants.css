@@ -176,6 +176,69 @@ p
     margin-left: 15px;
 }
 
+.dish {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+.name_dish
+{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.about_dish
+{
+    padding-top: 20px;
+}
+
+
+.green_icon {
+    height: 70px;
+    max-width: 50px;
+    display: none;
+    border-bottom-right-radius: 3rem;
+    border-top-right-radius: 3rem;  
+ }
+
+ .green_icon:hover {
+     transform: translateX(55px);
+     overflow: hidden;
+ }
+
+.green_box {
+    width: 80px;
+    height: 70px;
+    background-color: #99E2D0;
+}
+
+.green_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.green_circle:hover {
+    transform: rotate(360deg);
+    transition-duration: 300ms;
+}
+
+.main_dish_name
+{
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+
 .starter_one, .starter_two, .starter_three
 {
     display: flex;
@@ -193,77 +256,12 @@ p
     box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
 }
 
-.green_icon {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
- }
-
- .green_icon:hover {
-     transform: translateX(55px);
- }
-
-
-.green_box {
-    width: 80px;
-    height: 70px;
-    background-color: #99E2D0;
-}
-
-.green_circle {
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    color: white;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 1;
-    transition-duration: 400ms;
-    transform: rotate(360deg);
-}
-
-.green_circle:hover {
-    transform: rotate(360deg);
-}
-
-.dish {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 320px;    
-}
-
-.about_dish
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 330px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
-}
-
-
-.main_dish_name
-{
-    margin-top: 20px;
-    padding-left: 15px;
-}
-
-.price {
-    transition: margin-right 400ms;
-}
 
 .main_dish_one, .main_dish_two, .main_dish_three
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: white;
     line-height: 25px;
     height: 70px;
@@ -284,8 +282,8 @@ p
 .dessert_one, .dessert_two, .dessert_three
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: white;
     line-height: 25px;
     height: 70px;
@@ -468,7 +466,7 @@ footer i,
 }    
 
 /* sur les écrans, quand la largeur dépasse celle d'une tablette */
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 770px) {
     #bloc_page {
         width: 70%;
         height: auto;
@@ -482,6 +480,124 @@ footer i,
     .border_header {
         display: flex;
         flex-direction: row;
+    }
+
+    .header_full {
+        padding-left: 0px;
+        padding-right: 20px;
+        box-shadow: none;
+    }
+
+    .header_logo {
+        margin-left: 210px;
+    }
+
+    .title_restaurant {
+        justify-content: left;
+        margin-left: 0px;
+        padding-bottom: 10px;
+        bottom: 5px;
+        font-size: x-large;
+        bottom: 40px;
+    }
+
+    .name_restaurant {
+        margin-right: 55px;
+    }
+    .heart {
+        padding-top: 20px;
+    }
+
+    .picture_restaurant {
+        width: 100%;
+        height: 600px;
+        padding-left: 0px;
+    }
+
+    .menu_order {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .starter_one, .starter_two, .starter_three, .starter_fourth {
+        width: 270px;
+        height: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .main_dish {
+        margin-top: 20px;
+    }
+    .main_dish_one, .main_dish_two, .main_dish_three {
+        width: 270px;
+        height: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .dessert {
+        margin-top: 20px;
+    }
+    .dessert_one, .dessert_two, .dessert_three {
+        width: 270px;
+        height: 100px;
+        margin-top: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .starter_name, .main_dish_name, .dessert_name {
+        padding-left: 55px;
+        margin-top: 5px;
+    
+    }  
+    
+    .line {
+        margin-left: 55px;
+        margin-bottom: 0px;
+    }
+
+    
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 25px;
+        padding-left: 75px;       
+    }
+
+    .footer_logo {
+        margin-top: 8px;
+      
+    }
+
+    .footer_text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 950px;
+
+    }
+
+    .footer_text ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 320px;
+    }
+
+    .footer_text li {
+        padding-right: 20px;
+    }
+
+
+    /* sur les écrans, quand la largeur dépasse celle d'un ordi portable */
+@media screen and (min-width: 1400px) {
+    .back_homepage {
+        margin-left: 130px;
     }
 
     .header_full {
@@ -520,6 +636,7 @@ footer i,
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
@@ -527,58 +644,32 @@ footer i,
         width: 340px;
         height: 100px;
     }
-
+    .main_dish {
+        margin-top: 20px;
+    }
     .main_dish_one, .main_dish_two, .main_dish_three {
         width: 340px;
         height: 100px;
     }
 
+    .dessert {
+        margin-top: 20px;
+    }
     .dessert_one, .dessert_two, .dessert_three {
         width: 340px;
         height: 100px;
+        margin-top: 15px;
     }
 
     .starter_name, .main_dish_name, .dessert_name {
         padding-left: 55px;
-        margin-top: 35px;
+        margin-top: 5px;
     
     }  
     
     .line {
         margin-left: 55px;
+        margin-bottom: 0px;
     }
 
-    
-    footer {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 25px;
-        padding-left: 75px;       
-    }
-
-    .footer_logo {
-        margin-top: 8px;
-      
-    }
-
-    .footer_text {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 950px;
-
-    }
-
-    .footer_text ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 320px;
-    }
-
-    .footer_text li {
-        padding-right: 20px;
-    }
 }    
