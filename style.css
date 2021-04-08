@@ -61,11 +61,13 @@ p
 
 
 /* loading page */
+
+/*
 .loading_containeur {
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 1;
+    opacity: 0;
     background-image: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
     width: 100%;
     height: 100%;
@@ -213,19 +215,21 @@ p
     box-shadow: 3px 3px 3px rgb(180, 175, 175);
     border: 0px;
     opacity: 1;
+    transform: scale (1);
+    transition-property: transform;
+    transition-duration: 300ms;
 }
 
 .search_restaurant:hover {
     box-shadow: 3px 3px 3px rgb(75, 75, 75);
-    transform: scale(1.05);
-    transition-duration: all 400ms;
+    transform: scale(1.1);
     opacity: 0.7;
 }
 
 .search_restaurant:active {
     box-shadow: 3px 3px 3px rgb(75, 75, 75);
     transform: scale(1.15);
-    transition-duration: all 400ms;
+    transition-duration: 300ms;
 }
 
 /* Nav */
@@ -445,6 +449,14 @@ article
     width: 90%;
     height: 300px;
     margin-left: 20px;
+    -webkit-animation-name: fadeInOpacity;
+	        animation-name: fadeInOpacity;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
 }
 
 .second_restaurant
@@ -454,6 +466,14 @@ article
     width: 90%;
     height: 300px;
     margin-left: 20px;
+    -webkit-animation-name: fadeInOpacity;
+    animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .third_restaurant
@@ -463,6 +483,14 @@ article
     width: 90%;
     height: 300px;
     margin-left: 20px;
+    -webkit-animation-name: fadeInOpacity;
+    animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
 }
 
 .fourth_restaurant
@@ -472,6 +500,25 @@ article
     width: 90%;
     height: 300px;
     margin-left: 20px;
+    -webkit-animation-name: fadeInOpacity;
+    animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+        transform: translateY(200px);
+	}
+	100% {
+		opacity: 1;
+        transform: translateY(0);
+	}
 }
 
 .heart
@@ -487,6 +534,7 @@ article
 .full_heart
 {
     display: none;   
+    transition: background-image .3s;
 }
 
 .heart:hover .border_heart
@@ -502,7 +550,10 @@ article
     color: transparent;
     background-color: #FF79DA;
     background-image: linear-gradient(#FF79DA 10%, #9356DC 95%);
+    transition: color .3s;
 }
+/* transition ou transform ne s'applique pas à heart:hover / idem pour active...*/
+
 
 /* Footer */
 footer 
