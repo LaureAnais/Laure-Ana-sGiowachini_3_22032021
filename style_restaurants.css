@@ -182,6 +182,9 @@ p
     flex-direction: row;
     justify-content: space-between;
     width: 100%;    
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .name_dish
@@ -193,43 +196,80 @@ p
     text-overflow: ellipsis; 
 }
 
+.name_dish h4
+{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.name_dish p 
+{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
 .about_dish
 {
     padding-top: 20px;
+    text-align: right;
 }
 
 
 .green_icon {
-    height: 70px;
+    /*height: 70px;
     max-width: 50px;
-    display: none;
-    border-bottom-right-radius: 3rem;
-    border-top-right-radius: 3rem;  
- }
-
- .green_icon:hover {
-     transform: translateX(55px);
-     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0;
+  */
+    display: none; 
+    width: 30%;
+    overflow: hidden;
  }
 
 .green_box {
-    width: 80px;
-    height: 70px;
+    /*width: 80px;
+    height: 75px;*/
+    display: none;
+    width: 30%;
     background-color: #99E2D0;
-}
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; 
+   }
 
 .green_circle {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center ; 
     color: white;
     width: 100%;
     height: 100%;
+    font-size: large;
+    overflow: hidden;
 }
 
-.green_circle:hover {
+.starter_one .green_box {
+    display: block;
+}
+
+
+.starter_one:hover .green_circle {
     transform: rotate(360deg);
-    transition-duration: 300ms;
+    transition-duration: 400ms;
+}
+
+.starter_one:hover .green_icon {
+    display: block;
+    transform: translateX(20px);
+    transition-duration: 400ms;
+    width: 30%;
+    background-color: #99E2D0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; 
 }
 
 .main_dish_name
@@ -254,10 +294,10 @@ p
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -o-animation: fadein 2s;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
 }
 
 .main_dish_one, .main_dish_two, .main_dish_three
@@ -302,23 +342,24 @@ p
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -o-animation: fadein 2s;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
 }
 
 
 @keyframes fadein  {
     from {
         opacity: 0;
-        transition: 300ms;
-        transform: scaleX(1.8);
+        transition: 200ms;
+        transform:translateY(100px);
     }
 
     to {
         opacity:1;
         transition: 200ms;
+        
     }
 }
 
@@ -646,14 +687,14 @@ footer i,
 
     .starter_one, .starter_two, .starter_three, .starter_fourth {
         width: 340px;
-        height: 100px;
+        height: 75px;
     }
     .main_dish {
         margin-top: 20px;
     }
     .main_dish_one, .main_dish_two, .main_dish_three {
         width: 340px;
-        height: 100px;
+        height: 75px;
     }
 
     .dessert {
@@ -661,7 +702,7 @@ footer i,
     }
     .dessert_one, .dessert_two, .dessert_three {
         width: 340px;
-        height: 100px;
+        height: 75px;
         margin-top: 15px;
     }
 
