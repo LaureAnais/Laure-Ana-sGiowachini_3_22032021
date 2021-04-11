@@ -57,7 +57,8 @@ p
     width: 100%;
     height: auto;
     margin: auto;
-    z-index: 10;
+    z-index: 10; 
+    position: absolute;
 }
 
 /* loading page */
@@ -67,7 +68,8 @@ p
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color: #242F3F;
+    z-index: 25; 
+    background-color: #333333;
     top: 0px;
     left: 0px;
     bottom: 0px;
@@ -75,16 +77,28 @@ p
     height: 100%;
     margin: 0px;
     padding: 0px;
-    z-index: 25;
+    animation-name: loading 2s ease-in-out;
+    /*animation-iteration-count: 1;*/
 }
-.loading  {
+
+
+@keyframes loading {
+	0% {
+        opacity: 1;
+      }
+      
+      100% {
+        opacity: 0;
+      }
+  }
+
+.loading {
     display: flex;
     animation-name: loader 3s;
     animation-duration: 2500ms;
     animation-iteration-count: 1;
-    position: absolute;
-    z-index: 25;
 }
+
 .loader {
     display: inline-block;
     width: 30px;
@@ -94,19 +108,10 @@ p
     top: 50%;
     animation: loader 2s infinite ease;
 }
-
-.loader .loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #9356DC;
-    animation: loader-inner 2s infinite ease-in;
-  }
+/*besoin d'avoir le loader en position obsolute???*/
 
 @keyframes loader {
 	0% {
-        position: relative;
-        z-index: 1;
         transform: rotate(0deg);
       }
       
@@ -123,33 +128,8 @@ p
       }
       
       100% {
-        z-index: 25;
         transform: rotate(360deg);
       }
-}
-
-@keyframes loader-inneur {
-    0% {
-        z-index: 1;
-      height: 0%;
-    }
-    
-    25% {
-      height: 0%;
-    }
-    
-    50% {
-      height: 100%;
-    }
-    
-    75% {
-      height: 100%;
-    }
-    
-    100% {
-        z-index: 25;
-      height: 0%;
-    }
   }
 
 /* Header */
