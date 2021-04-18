@@ -216,30 +216,11 @@ p
     text-align: right;
 }
 
-
 .green_icon {
-    /*height: 70px;
-    max-width: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    opacity: 0;
-  */
     display: none; 
     width: 30%;
     overflow: hidden;
  }
-
-.green_box {
-    /*width: 80px;
-    height: 75px;*/
-    display: none;
-    width: 30%;
-    background-color: #99E2D0;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px; 
-   }
 
 .green_circle {
     display: flex;
@@ -252,7 +233,6 @@ p
     overflow: hidden;
 }
 
-
 .starter_one:hover .green_icon {
     display: block;
     transition: transform .5s ease-in-out;
@@ -261,17 +241,12 @@ p
     background-color: #99E2D0;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px; 
-    
 }
 
-.starter_one .green_box {
-    display: block;
-}
 .starter_one:hover .green_circle {
     transition: transform .5s ease-in-out;
     transform:rotate(360deg);
 }
-
 
 .main_dish_name
 {
