@@ -109,7 +109,6 @@ p
 .title_restaurant
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: rgb(245, 243, 243) ;
     font-style: italic ;
@@ -121,7 +120,7 @@ p
     
 }
 
-.name_restaurant
+.title_restaurant h1
 {
     padding-left: 10px;
     font-family: Shrikhand,"cursive";
@@ -130,7 +129,7 @@ p
 {
     color: black;
     padding-right: 15px;
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 24px;
     background-clip: text;
     cursor: pointer;
@@ -162,9 +161,11 @@ p
     background-color: rgb(245, 243, 243) ;
 }
 
-.starter_name
+.menu h2 
 {
     padding-left: 15px;
+    text-transform: capitalize;
+    padding-top: 15px;
 }
 
 .line
@@ -179,46 +180,30 @@ p
 .dish {
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;    
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
 }
 
 .name_dish
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
 }
 
-.name_dish h4
-{
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
-}
-
-.name_dish p 
-{
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
-}
-
-.about_dish
-{
-    padding-top: 20px;
-    text-align: right;
-}
+.about_dish 
+ {
+     display: flex;
+     justify-content: space-between;
+ }
 
 .green_icon {
-    display: none; 
-    width: 30%;
+    position: relative;
+    right: -40px;
     overflow: hidden;
  }
 
@@ -233,32 +218,24 @@ p
     overflow: hidden;
 }
 
-.starter_one:hover .green_icon {
+.dish:hover .green_icon {
     display: block;
-    transition: transform 5s ease-in-out;
-    transform: translateX(20px);
+    transform: translateX(-20px);
+    transition: transform 2s ease-in;
     width: 30%;
     background-color: #99E2D0;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px; 
 }
 
-.starter_one:hover .green_circle {
-    transition: transform 5s ease-in-out;
+.dish:hover .green_circle {
+    transition: transform 2s ease-in;;
     transform:rotate(360deg);
 }
 
-.main_dish_name
-{
-    margin-top: 20px;
-    padding-left: 15px;
-}
-
-
-.starter_one, .starter_two, .starter_three
+.dish
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: white;
     line-height: 25px;
@@ -266,62 +243,32 @@ p
     width: 90%;
     padding-left: 10px;
     padding-right: 10px;
+    
     margin-left: 10px;
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s;
+}    
+
+.starters {
+    animation: fadein 0.7s;
+    -moz-animation: fadein 0.7s;
+    -webkit-animation: fadein 0.7s;
+    -o-animation: fadein 0.7s;
 }
 
-.main_dish_one, .main_dish_two, .main_dish_three
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    line-height: 25px;
-    height: 70px;
-    width: 90%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
+.dishes {
+    animation: fadein 1.3s;
+    -moz-animation: fadein 1.3s;
+    -webkit-animation: fadein 1.3s;
+    -o-animation: fadein 1.3s;
+}
+
+.desserts {
     animation: fadein 2s;
     -moz-animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -o-animation: fadein 2s;
-
-}
-
-.dessert_name
-{
-    margin-top: 20px;
-    padding-left: 15px;
-}
-.dessert_one, .dessert_two, .dessert_three
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    line-height: 25px;
-    height: 70px;
-    width: 90%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
-    animation: fadein 3s;
-    -moz-animation: fadein 3s;
-    -webkit-animation: fadein 3s;
-    -o-animation: fadein 3s;
 }
 
 
@@ -337,11 +284,6 @@ p
         transition: 200ms;
         
     }
-}
-
-.description_dish
-{
-    color: gray;
 }
 
 .order
@@ -426,7 +368,6 @@ footer
 .icon_footer2
 {
     padding-right: 8px;
-    /*line-height: 0px;*/
 }
 
 footer a 
@@ -466,15 +407,8 @@ footer i,
         height: auto;
         object-fit: cover;
     }
-    .starter_one, .starter_two, .starter_three {
-        width: 95%;
-    }
-    .main_dish_one, .main_dish_two, .main_dish_three
-    {
-        width: 95%;
-    }
-    .dessert_one, .dessert_two, .dessert_three
-    {
+
+    .dish {
         width: 95%;
     }
     
@@ -504,8 +438,7 @@ footer i,
     #bloc_page {
         width: 70%;
         height: auto;
-        margin: auto;
-        
+        margin: auto;        
     }  
     .back_homepage {
         margin-left: 130px;
@@ -535,9 +468,10 @@ footer i,
         bottom: 40px;
     }
 
-    .name_restaurant {
+    .title_restaurant h1 {
         margin-right: 55px;
     }
+
     .heart {
         padding-top: 20px;
     }
@@ -548,49 +482,9 @@ footer i,
         padding-left: 0px;
     }
 
-    .menu_order {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .starter_one, .starter_two, .starter_three, .starter_fourth {
-        width: 270px;
-        height: 100px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .main_dish {
-        margin-top: 20px;
-    }
-    .main_dish_one, .main_dish_two, .main_dish_three {
-        width: 270px;
-        height: 100px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .dessert {
-        margin-top: 20px;
-    }
-    .dessert_one, .dessert_two, .dessert_three {
-        width: 270px;
-        height: 100px;
-        margin-top: 15px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .starter_name, .main_dish_name, .dessert_name {
-        padding-left: 55px;
-        margin-top: 5px;
-    
-    }  
-    
-    .line {
-        margin-left: 55px;
-        margin-bottom: 0px;
+    .dish {
+        width: 95%;
+        height: 80px;
     }
 
    footer {
@@ -631,18 +525,6 @@ footer i,
         margin-left: 400px;
     }
 
-    .title_restaurant {
-        justify-content: left;
-        margin-left: 0px;
-        padding-bottom: 10px;
-        bottom: 5px;
-        font-size: x-large;
-        bottom: 40px;
-    }
-
-    .name_restaurant {
-        margin-right: 55px;
-    }
     .heart {
         padding-top: 20px;
     }
@@ -652,48 +534,6 @@ footer i,
         height: 500px;
         padding-left: 0px;
     }
-
-    .menu_order {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .starter_one, .starter_two, .starter_three, .starter_fourth {
-        width: 340px;
-        height: 75px;
-    }
-    .main_dish {
-        margin-top: 20px;
-    }
-    .main_dish_one, .main_dish_two, .main_dish_three {
-        width: 340px;
-        height: 75px;
-    }
-
-    .dessert {
-        margin-top: 20px;
-    }
-    .dessert_one, .dessert_two, .dessert_three {
-        width: 340px;
-        height: 75px;
-        margin-top: 15px;
-    }
-
-    .starter_name, .main_dish_name, .dessert_name {
-        padding-left: 55px;
-        margin-top: 5px;
-    
-    }  
-    
-    .line {
-        margin-left: 55px;
-        margin-bottom: 0px;
-    }
-
-
 
     footer {
         width: 100%;
