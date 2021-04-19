@@ -178,32 +178,48 @@ p
 }
 
 .dish {
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    width: 100%;    
+    line-height: 25px;
+    height: 70px;
+    width: 90%;    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
 }
 
 .name_dish
-{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+{   width: 100%;
     padding-top: 10px;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
 }
 
+.name_dish h3 {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
 .about_dish 
  {
      display: flex;
      justify-content: space-between;
+     white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
  }
-
+ .about_dish p {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;  
+ }
 .green_icon {
     position: relative;
-    right: -40px;
+    /*right: -40px;*/
     overflow: hidden;
  }
 
@@ -211,7 +227,7 @@ p
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: white;
+    color: transparent;
     width: 100%;
     height: 100%;
     font-size: large;
@@ -219,9 +235,10 @@ p
 }
 
 .dish:hover .green_icon {
-    display: block;
+    position: relative;
+    right: -40px;
     transform: translateX(-20px);
-    transition: transform 2s ease-in;
+    transition: transform 1s ease-in;
     width: 30%;
     background-color: #99E2D0;
     border-bottom-right-radius: 10px;
@@ -229,26 +246,11 @@ p
 }
 
 .dish:hover .green_circle {
-    transition: transform 2s ease-in;;
-    transform:rotate(360deg);
+    color: white;
+    transition: transform 1s ease-in;;
+    transform:rotate(-360deg);
 }
-
-.dish
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    line-height: 25px;
-    height: 70px;
-    width: 90%;
-    padding-left: 10px;
-    padding-right: 10px;
     
-    margin-left: 10px;
-    margin-top: 20px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0 5px 10px 0 rgb(216, 209, 209);
-}    
 
 .starters {
     animation: fadein 0.7s;
@@ -407,11 +409,9 @@ footer i,
         height: auto;
         object-fit: cover;
     }
-
     .dish {
         width: 95%;
     }
-    
     footer {
         width: 100%;
         display: flex;
@@ -481,12 +481,7 @@ footer i,
         height: 300px;
         padding-left: 0px;
     }
-
-    .dish {
-        width: 95%;
-        height: 80px;
-    }
-
+ 
    footer {
         width: 97%;
         display: flex;
@@ -534,7 +529,9 @@ footer i,
         height: 500px;
         padding-left: 0px;
     }
-
+    .dish {
+        width: 95%;
+    }
     footer {
         width: 100%;
         display: flex;
