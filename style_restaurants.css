@@ -164,7 +164,8 @@ p
 .menu h2 
 {
     padding-left: 15px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-weight: lighter;
     padding-top: 15px;
 }
 
