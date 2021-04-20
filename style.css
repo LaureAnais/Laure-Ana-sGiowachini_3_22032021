@@ -37,7 +37,7 @@ ul
 section h1, footer h1
 {
     font-family: 'Shrikland', Arial, Helvetica, sans-serif;
-    font-weight: Shrikland;
+    font-weight: 14px;
 }
 
 h2
@@ -370,10 +370,8 @@ article
     height: 30px;
 }
 
-.picture_restaurants
-{
-    border-radius: 1rem 1rem 0 0;
-    position: relative;
+figure
+{   position: relative;
     overflow: hidden;
     height: 180px;
 }
