@@ -384,7 +384,6 @@ figure {
 
 .heart:hover .full_heart {
     display: block;
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-color: #FF79DA;

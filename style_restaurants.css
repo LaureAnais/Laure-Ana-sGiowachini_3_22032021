@@ -149,7 +149,6 @@ p
 .heart:hover .full_heart 
 {
     display: block;
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(#FF79DA 10%, #9356DC 95%);
@@ -187,7 +186,6 @@ p
     height: 70px;
     width: 90%;
     padding-left: 10px;
-    /* padding-right: 10px; */
     margin-left: 10px;
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
